@@ -4,6 +4,12 @@ import { GRAY_700 } from 'constants/color'
 import { pxToRem } from 'utils/style'
 import appIconImage from 'assets/images/triple@2x.png'
 
+export const appStatisticsList = css`
+  display: grid;
+  grid-row-gap: ${pxToRem(20)};
+  margin-bottom: ${pxToRem(50)};
+`
+
 export const appInfoText = css`
   position: absolute;
   bottom: ${pxToRem(40)};

@@ -2,6 +2,7 @@ import * as Styles from './styles'
 
 import Layout from 'components/Layout'
 import { visuallyHiddenStyle } from 'styles/common'
+import AppStatistics from 'components/AppStatistics'
 
 // import googleAppStoreIcon from 'assets/images/play-store@2x.png'
 // import appleIcon from 'assets/images/badge-apple@4x.png'
@@ -16,25 +17,10 @@ function App() {
             <span css={Styles.appInfoText}>2021년 12월 기준</span>
           </p>
           <div>
-            <div>
-              <p>
-                <strong>
-                  <span>700</span>만 명
-                </strong>
-                의 여행자
-              </p>
-              <p>
-                <strong>
-                  <span>100</span>만 개
-                </strong>
-                의 여행 리뷰
-              </p>
-              <p>
-                <strong>
-                  <span>470</span>만 개
-                </strong>
-                의 여행 일정
-              </p>
+            <div css={Styles.appStatisticsList}>
+              <AppStatistics number={700} unit="명" object="여행자" />
+              <AppStatistics number={100} unit="개" object="여행 리뷰" />
+              <AppStatistics number={470} unit="개" object="여행 일정" />
             </div>
             <div>
               <p>
