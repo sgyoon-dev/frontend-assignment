@@ -1,11 +1,8 @@
 import * as Styles from './styles'
 
+import AppStatistics from 'components/AppStatistics'
 import Layout from 'components/Layout'
 import { visuallyHiddenStyle } from 'styles/common'
-import AppStatistics from 'components/AppStatistics'
-
-// import googleAppStoreIcon from 'assets/images/play-store@2x.png'
-// import appleIcon from 'assets/images/badge-apple@4x.png'
 
 function App() {
   return (
@@ -22,17 +19,15 @@ function App() {
               <AppStatistics number={100} unit="개" object="여행 리뷰" />
               <AppStatistics number={470} unit="개" object="여행 일정" />
             </div>
-            <div>
-              <p>
-                {/* icon */}
-                <span />
+            <div css={Styles.appPrizeList}>
+              <p css={Styles.appPrize}>
+                <span css={Styles.googleIcon} />
                 2018 구글 플레이스토어
                 <br />
                 올해의 앱 최우수상 수상
               </p>
-              <p>
-                {/* icon */}
-                <span />
+              <p css={Styles.appPrize}>
+                <span css={Styles.appleIcon} />
                 2018 애플 앱스토어
                 <br />
                 오늘의 여행앱 선정
