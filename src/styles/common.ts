@@ -11,3 +11,9 @@ export const visuallyHiddenStyle = css`
   white-space: nowrap;
   width: 1px;
 `
+
+export const bgImageCoverStyles = css`
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+`
