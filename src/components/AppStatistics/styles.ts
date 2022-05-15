@@ -4,9 +4,9 @@ import { GRAY } from 'constants/color'
 import { pxToRem } from 'utils/style'
 
 export const strong = css`
-  font-weight: bold;
+  font-weight: 800;
   span {
-    font-weight: bold;
+    font-weight: 800;
   }
 `
 

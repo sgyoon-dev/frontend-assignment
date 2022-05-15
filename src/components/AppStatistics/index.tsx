@@ -12,8 +12,7 @@ function AppStatistics({
   return (
     <p css={Styles.p}>
       <strong css={Styles.strong}>
-        <span>{number}만</span>
-        {unit}
+        <span>{number}</span>만 {unit}
       </strong>
       의 {object}
     </p>

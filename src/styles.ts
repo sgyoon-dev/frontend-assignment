@@ -36,7 +36,7 @@ export const appPrize = css`
   font-size: ${pxToRem(14)};
   line-height: ${pxToRem(22)};
   color: ${GRAY_800};
-  font-weight: bold;
+  font-weight: 800;
 `
 
 export const appPrizeList = css`
@@ -59,6 +59,7 @@ export const appInfoText = css`
   display: block;
   font-size: ${pxToRem(15)};
   color: ${GRAY_700};
+  font-weight: 500;
 `
 
 export const appInfo = css`
