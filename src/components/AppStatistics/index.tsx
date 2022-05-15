@@ -1,18 +1,25 @@
+import { useRef } from 'react'
+
 import * as Styles from './styles'
 
+import useCounter from 'hooks/useCounter'
+
 function AppStatistics({
-  number,
+  endNumber,
   unit,
   object,
 }: {
-  number: number
+  endNumber: number
   unit: string
   object: string
 }) {
+  const counterRef = useRef(null)
+  useCounter({ ref: counterRef, endNumber })
+
   return (
     <p css={Styles.p}>
       <strong css={Styles.strong}>
-        <span>{number}</span>만 {unit}
+        <span ref={counterRef} />만 {unit}
       </strong>
       의 {object}
     </p>

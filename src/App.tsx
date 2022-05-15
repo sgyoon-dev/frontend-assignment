@@ -15,9 +15,9 @@ function App() {
           </p>
           <div>
             <div css={Styles.appStatisticsList}>
-              <AppStatistics number={700} unit="명" object="여행자" />
-              <AppStatistics number={100} unit="개" object="여행 리뷰" />
-              <AppStatistics number={470} unit="개" object="여행 일정" />
+              <AppStatistics endNumber={700} unit="명" object="여행자" />
+              <AppStatistics endNumber={100} unit="개" object="여행 리뷰" />
+              <AppStatistics endNumber={470} unit="개" object="여행 일정" />
             </div>
             <div css={Styles.appPrizeList}>
               <p css={Styles.appPrize}>
