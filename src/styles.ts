@@ -1,27 +1,12 @@
-import { css, keyframes } from '@emotion/react'
+import { css } from '@emotion/react'
 
 import appleIconImage from 'assets/images/badge-apple@4x.png'
 import googleIconImage from 'assets/images/play-store@2x.png'
 import appIconImage from 'assets/images/triple@2x.png'
+import { ShowAnimationDelay } from 'constants/animation'
 import { GRAY_700, GRAY_800 } from 'constants/color'
+import { showAnimationStyles } from 'styles/animation'
 import { pxToRem } from 'utils/style'
-
-const showAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(${pxToRem(20)});
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const showAnimationStyles = (delay = 0) => css`
-  animation: ${showAnimation} 0.7s;
-  animation-delay: ${`${delay}s`};
-  animation-fill-mode: both;
-`
 
 const backgroundImageStyles = css`
   background-repeat: no-repeat;
@@ -57,17 +42,10 @@ export const appPrize = css`
 `
 
 export const appPrizeList = css`
-  ${showAnimationStyles(0.2)};
+  ${showAnimationStyles(ShowAnimationDelay.appPrizeList)};
   display: flex;
   justify-content: space-between;
   width: ${pxToRem(417)};
-`
-
-export const appStatisticsList = css`
-  ${showAnimationStyles(0.1)};
-  display: grid;
-  grid-row-gap: ${pxToRem(20)};
-  margin-bottom: ${pxToRem(50)};
 `
 
 export const appInfoText = css`

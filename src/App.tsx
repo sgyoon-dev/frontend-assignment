@@ -1,6 +1,6 @@
 import * as Styles from './styles'
 
-import AppStatistics from 'components/AppStatistics'
+import AppStatisticsList from 'components/AppStatisticsList'
 import Layout from 'components/Layout'
 import { visuallyHiddenStyle } from 'styles/common'
 
@@ -14,11 +14,7 @@ function App() {
             <span css={Styles.appInfoText}>2021년 12월 기준</span>
           </p>
           <div>
-            <div css={Styles.appStatisticsList}>
-              <AppStatistics endNumber={700} unit="명" object="여행자" />
-              <AppStatistics endNumber={100} unit="개" object="여행 리뷰" />
-              <AppStatistics endNumber={470} unit="개" object="여행 일정" />
-            </div>
+            <AppStatisticsList />
             <div css={Styles.appPrizeList}>
               <p css={Styles.appPrize}>
                 <span css={Styles.googleIcon} />
