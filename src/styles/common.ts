@@ -11,6 +11,11 @@ export const visuallyHiddenStyle = css`
   white-space: nowrap;
   width: 1px;
 `
+export const reduceMotionStyle = css`
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+`
 
 export const bgImageCoverStyles = css`
   background-repeat: no-repeat;

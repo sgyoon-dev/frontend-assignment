@@ -1,5 +1,6 @@
 import { css, keyframes } from '@emotion/react'
 
+import { reduceMotionStyle } from 'styles/common'
 import { pxToRem } from 'utils/style'
 
 const showAnimation = keyframes`
@@ -14,6 +15,7 @@ const showAnimation = keyframes`
 `
 
 export const showAnimationStyles = (delay = 0) => css`
+  ${reduceMotionStyle};
   animation: ${showAnimation} 0.7s;
   animation-delay: ${`${delay}s`};
   animation-fill-mode: both;
