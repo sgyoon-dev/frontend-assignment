@@ -2,6 +2,7 @@ import { css } from '@emotion/react'
 
 import appIconImage from 'assets/images/triple@2x.png'
 import { GRAY_700 } from 'constants/color'
+import { DESKTOP_CONTAINER_MAX_WIDTH } from 'constants/layout'
 import { showAnimationStyles } from 'styles/animation'
 import { bgImageCoverStyles } from 'styles/common'
 import { pxToRem } from 'utils/style'
@@ -14,7 +15,6 @@ export const appInfoText = css`
   display: block;
   font-size: ${pxToRem(15)};
   color: ${GRAY_700};
-  font-weight: 500;
 `
 
 export const appInfo = css`
@@ -26,7 +26,7 @@ export const appInfo = css`
   background-image: url(${appIconImage});
 `
 
-export const section = css`
+export const sectionContainer = css`
   display: flex;
   justify-content: space-between;
   width: ${pxToRem(1040)};
@@ -35,7 +35,7 @@ export const section = css`
   padding-bottom: ${pxToRem(74)};
 `
 
-export const main = css`
-  min-width: ${pxToRem(1200)};
+export const mainContainer = css`
+  min-width: ${pxToRem(DESKTOP_CONTAINER_MAX_WIDTH)};
   margin: 0 auto;
 `

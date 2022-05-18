@@ -17,7 +17,7 @@ export const appPrize = css`
   font-size: ${pxToRem(14)};
   line-height: ${pxToRem(22)};
   color: ${GRAY_800};
-  font-weight: 800;
+  font-weight: bold;
   white-space: pre-line;
 `
 

@@ -5,7 +5,6 @@ const GlobalStyle = css`
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 600;
   }
 
   /* tailwind css reset 설정을 편집하여 사용 */

@@ -10,12 +10,15 @@ function AppStatisticsList() {
   return (
     <div css={Styles.appStatisticsList}>
       {data.map((item) => (
-        <p css={Styles.p} key={item.id}>
-          <strong css={Styles.strong}>
+        <p css={Styles.appStatistics} key={item.id}>
+          <strong css={Styles.amount}>
             {reduceMotion ? (
               <span>{item.amountNumber}</span>
             ) : (
-              <NumberCounter endNumber={item.amountNumber} />
+              <NumberCounter
+                endNumber={item.amountNumber}
+                styles={Styles.counter}
+              />
             )}
             {item.amountUnit} {item.unit}
           </strong>
